@@ -33,7 +33,7 @@ const App = () => {
     if (isSmallScreen) {
       setShowQuote(false);
     }
-  });
+  }, []);
 
   return (
     <>

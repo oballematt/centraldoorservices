@@ -34,7 +34,7 @@ const Services = (props) => {
     },
   ];
   return (
-    <>
+    <div>
       <h1 ref={props.propRef} style={{ fontSize: "50px", marginTop: "3%" }}>Our Services</h1>
       <h3  style={{ letterSpacing: "1px", fontSize: "22px" }}>
         As dedicated specialists in commercial door repair, we strive to bring
@@ -118,7 +118,7 @@ const Services = (props) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

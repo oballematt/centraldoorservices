@@ -9,25 +9,25 @@ import Button from 'react-bootstrap/Button';
 const Services = (props) => {
   const imgUrl = [
     {
-      imageUrl: `${import.meta.env.BASE_URL}src/assets/shutterstock_370563752_1.jpg`,
+      imageUrl: `${import.meta.env.BASE_URL}/src/assets/shutterstock_370563752_1.jpg`,
       serviceTitle: "Automatic Door Repair",
       serviceDescription:
         "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
     },
     {
-      imageUrl: "src/assets/shutterstock_370563752.jpg",
+      imageUrl: `${import.meta.env.BASE_URL}/src/assets/shutterstock_370563752.jpg`,
       serviceTitle: "Access Control System Repairs",
       serviceDescription:
         "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
     },
     {
-      imageUrl: "src/assets/shutterstock_1249715005.jpg",
+      imageUrl: `${import.meta.env.BASE_URL}/src/assets/shutterstock_1249715005.jpg`,
       serviceTitle: "Hinge and Hardware Replacements",
       serviceDescription:
         "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
     },
     {
-      imageUrl: "src/assets/shutterstock_2195199497_med.jpg",
+      imageUrl: `${import.meta.env.BASE_URL}/src/assets/shutterstock_2195199497_med.jpg`,
       serviceTitle: "Preventative Maintenance Programs",
       serviceDescription:
         "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",

@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 const Services = (props) => {
   const imgUrl = [
     {
-      imageUrl: "src/assets/shutterstock_370563752_1.jpg",
+      imageUrl: `${import.meta.env.BASE_URL}src/assets/shutterstock_370563752_1.jpg`,
       serviceTitle: "Automatic Door Repair",
       serviceDescription:
         "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",

@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
       <img
-        src={import.meta.env.BASE_URL + "public\shutterstock_2032605872.jpg"}
+        src={import.meta.env.BASE_URL + "/public/shutterstock_2032605872.jpg"}
         alt="Header Image"
         style={imageStyle}
       />

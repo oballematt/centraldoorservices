@@ -29,7 +29,7 @@ const ServiceAreas = (props) => {
             <Image
               fluid
               style={{ width: "100%" }}
-              src={import.meta.env.BASE_URL + "/src/assets/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"}
+              src={"./src/assets/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"}
             />
             ;
           </Col>

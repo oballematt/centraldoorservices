@@ -7,7 +7,8 @@ import { Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
 import emailjs from "@emailjs/browser";
-import Toast from "react-bootstrap/Toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Services = (props) => {
   const [firstName, setFirstName] = useState("");
@@ -17,9 +18,9 @@ const Services = (props) => {
   const [quoteOption, setQuoteOption] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [toast, showToast] = useState(true);
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     setLoading(true);
     const serviceId = import.meta.env.VITE_SERVICE_QUOTE_ID;
     const templateId = import.meta.env.VITE_TEMPLATE_QUOTE_ID;
@@ -45,6 +46,10 @@ const Services = (props) => {
         setEmail("");
         setMessage("");
         setLoading(false);
+        toast.success(
+          "Success! We received your information and will get back to you soon!",
+          { position: "top-right", theme: "colored" }
+        );
       })
       .catch((error) => {
         console.log(error);
@@ -184,7 +189,6 @@ const Services = (props) => {
                         onChange={(e) => setMessage(e.target.value)}
                       />
                     </Form.Group>
-
                     <Button
                       style={{
                         width: "50%",
@@ -202,6 +206,7 @@ const Services = (props) => {
             </Card>
           </Col>
         </Row>
+        <ToastContainer />
       </Container>
     </div>
   );

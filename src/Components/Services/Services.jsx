@@ -174,10 +174,10 @@ const Services = (props) => {
                         value={quoteOption}
                       >
                         <option>Service</option>
-                        <option>Automatic Door Repair</option>
-                        <option>Access Control System Repairs</option>
-                        <option>Hinge and Hardware Replacements</option>
-                        <option>Preventative Maintenance Programs</option>
+                        <option>Residential Garage Door Repair</option>
+                        <option>Residential Garage Door Installation</option>
+                        <option>Commercial Overhead Door Repair</option>
+                        <option>Entry Door Repair</option>
                       </Form.Select>
                     </Form.Group>
                     <Form.Group className="mb-3">

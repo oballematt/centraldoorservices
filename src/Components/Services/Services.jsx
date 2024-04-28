@@ -58,36 +58,36 @@ const Services = (props) => {
 
   const imgUrl = [
     {
-      imageUrl: `./src/assets/shutterstock_370563752_1.jpg`,
-      serviceTitle: "Automatic Door Repair",
+      imageUrl: `./src/assets/shutterstock_621949454.jpg`,
+      serviceTitle: "Residential Garage Door Repair",
       serviceDescription:
-        "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
+        "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
     },
     {
-      imageUrl: `./src/assets/shutterstock_370563752.jpg`,
-      serviceTitle: "Access Control System Repairs",
+      imageUrl: `./src/assets/shutterstock_1661496175.jpg`,
+      serviceTitle: "Residential Garage Door Installation",
       serviceDescription:
-        "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
+        "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
     },
     {
-      imageUrl: `./src/assets/shutterstock_1249715005.jpg`,
-      serviceTitle: "Hinge and Hardware Replacements",
+      imageUrl: `./src/assets/shutterstock_2032605872.jpg`,
+      serviceTitle: "Commercial Overhead Door Repair",
       serviceDescription:
-        "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
+        "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
     },
     {
-      imageUrl: `./src/assets/shutterstock_2195199497_med.jpg`,
-      serviceTitle: "Preventative Maintenance Programs",
+      imageUrl: `./src/assets/shutterstock_707797201.jpg`,
+      serviceTitle: "Entry Door Repair",
       serviceDescription:
-        "This is a longer card with supporting text below as anatural lead-in to additional content. This content is alittle bit longer.",
+        "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
     },
   ];
   return (
     <div>
-      <h1 ref={props.propRef} style={{ fontSize: "50px", marginTop: "3%" }}>
+      <h1 ref={props.propRef} style={{ fontSize: "50px", marginTop: "3%", color: "rgb(29,41,81)" }}>
         Our Services
       </h1>
-      <h1 style={{ letterSpacing: "1px", fontSize: "30px" }}>
+      <h1 style={{ letterSpacing: "1px", fontSize: "30px", color: "rgb(29,41,81)" }}>
         As dedicated specialists in commercial door repair, we strive to bring
         you a wealth of expertise and a commitment to excellence to every
         project.
@@ -118,7 +118,7 @@ const Services = (props) => {
               style={{
                 width: "100%",
                 height: "100%",
-                backgroundColor: "rgb(85 99 90)",
+                backgroundColor: "rgb(29,41,81)",
               }}
             >
               <Card.Body>

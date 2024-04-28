@@ -8,21 +8,22 @@ import Image from "react-bootstrap/Image";
 
 const ServiceAreas = (props) => {
   const serviceAreas = [
-    "location 1",
-    "location 2",
-    "location 3",
-    "location 4",
-    "location 5",
-    "location 6",
+    "Austin",
+    "Marble Falls",
+    "Horseshoe Bay",
+    "Georgetown",
+    "Round Rock",
+    "Cedar Park",
+    "And More..."
   ];
   return (
     <>
-      <h1 ref={props.propRef} style={{ fontSize: "50px", marginTop: "3%" }}>Service Areas</h1>
-      <h2 style={{ fontSize: "30px" }}>
+      <h1 ref={props.propRef} style={{ fontSize: "50px", marginTop: "3%", color: "rgb(29,41,81)" }}>Service Areas</h1>
+      <h3 style={{letterSpacing: '1px', fontSize: "30px", color: "rgb(29,41,81)" }}>
         {" "}
         We look forward to serving you in the following areas! If you do not see
         your location listed, send a message and we will see if we can help!
-      </h2>
+      </h3>
       <Container>
         <Row>
           <Col xl={8}>
@@ -31,7 +32,7 @@ const ServiceAreas = (props) => {
               style={{ width: "100%" }}
               src={"./src/assets/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"}
             />
-            ;
+            
           </Col>
           <Col xl={4}>
             <Card

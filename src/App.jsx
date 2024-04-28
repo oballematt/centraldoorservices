@@ -46,12 +46,12 @@ const App = () => {
         <Header serviceClick={scrollToService} contactClick={scrollToContact} />
         {isSmallScreen ? <Carousel1 /> : <Services propRef={serviceRef} />}
         <ServiceAreas propRef={areaRef}/>
-        <h1 style={{ marginTop: "3%" }}>Want to know more?</h1>
+        <h1 style={{ marginTop: "3%", color: "rgb(29,41,81)" }}>Contact Us</h1>
       </div>
       <div
         style={{
-          backgroundColor: "rgb(85 99 90)",
-          height: "400px",
+          backgroundColor: "rgb(29,41,81)",
+          height: "550px",
           width: "100%",
           margin: "auto",
           justifyContent: "center",

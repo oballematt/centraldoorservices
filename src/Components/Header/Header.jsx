@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
       <img
-        src="src\assets\shutterstock_2032605872.jpg"
+        src="src/assets/shutterstock_2267418927.jpg"
         alt="Header Image"
         style={imageStyle}
       />
@@ -57,7 +57,7 @@ const overlayStyle = {
 };
 
 const buttonStyles = {
-  backgroundColor: 'rgb(85 99 90)',
+  backgroundColor: 'rgb(29,41,81)',
   borderRadius: '5px',
   borderStyle: 'none',
   boxShadow: 'rgba(245, 244, 247, .25) 0 1px 1px inset',

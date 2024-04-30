@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import NavTabs from "../Tabs/Tabs";
 import Card from "react-bootstrap/Card";
+import "./Carousel.css"
 
 const Carousel1 = () => {
   const [index, setIndex] = useState(0);
@@ -11,33 +11,46 @@ const Carousel1 = () => {
     setIndex(selectedIndex);
   };
 
-  const images = [
-    "src/assets/shutterstock_370563752_1.jpg",
-    "src/assets/shutterstock_2195199497_sm.jpg",
-    "src/assets/austin-texas-usa-sunrise-skyline-600nw-681676399.webp",
-    "src/assets/shutterstock_398613205.jpg",
+  const content = [
+    {
+      title: "Residential Garage Door Repair",
+      description:
+        "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
+      image: "src/assets/shutterstock_621949454.jpg",
+    },
+    {
+      title: "Residential Garage Door Installation",
+      description:
+        "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
+      image: "src/assets/shutterstock_1661496175.jpg",
+    },
+    {
+      title: "Commercial Overhead Door Repair",
+      description:
+        "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
+      image: "src/assets/shutterstock_2032605872.jpg",
+    },
+    {
+      title: "Entry Door Repair",
+      description:
+        "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
+      image: "src/assets/shutterstock_707797201.jpg",
+    },
   ];
 
   return (
     <>
-      <h1 style={{ fontSize: "50px", marginTop: "3%" }}>Our Services</h1>
-      <h3 style={{ letterSpacing: "1px", fontSize: "22px" }}>
-        As dedicated specialists in commercial door repair, we strive to bring
-        you a wealth of expertise and a commitment to excellence to every
-        project.
-      </h3>
-      <NavTabs />
-      <Carousel fade activeIndex={index} onSelect={handleSelect}>
-        {images.map((item, idx) => (
+      <Carousel slide={false} pause={'hover'} interval={4000} style={{height: "680px"}} activeIndex={index} onSelect={handleSelect}>
+        {content.map((item, idx) => (
           <Carousel.Item>
-            <Card key={idx} style={{ width: "100%"}}>
-              <Card.Img variant="top" src={item} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+            <Card key={idx} style={{ width: "100%", height: "100%"  }}>
+              <Card.Img style={{height: "100%"}} variant="top" src={item.image} />
+              <Card.Body style={{
+                      backgroundColor: "rgba(29, 41, 81, 0.8)",
+                      color: "white",
+                    }}>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>{item.description}</Card.Text>
               </Card.Body>
             </Card>
           </Carousel.Item>

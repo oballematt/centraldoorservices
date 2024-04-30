@@ -37,11 +37,12 @@ const BackToTop = () => {
         right: "20px",
         padding: "10px",
         backgroundColor: "#007BFF",
-        width: "5%",
+        maxWidth: "200px",
         color: "#fff",
         border: "none",
         borderRadius: "5px",
         cursor: "pointer",
+        zIndex: "200"
       }}
     >
       Back to Top

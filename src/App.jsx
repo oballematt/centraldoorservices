@@ -8,11 +8,11 @@ import Carousel1 from "./Components/Carousel/Carousel";
 import BackToTop from "./Components/BackToTop/BackToTop";
 
 const App = () => {
-  const [showServices, setShowServices] = useState(true);
-  const [showQuote, setShowQuote] = useState(true);
+  // const [showServices, setShowServices] = useState(true);
+  // const [showQuote, setShowQuote] = useState(true);
   const contactRef = useRef(null);
   const serviceRef = useRef(null);
-  const areaRef = useRef(null)
+  const areaRef = useRef(null);
 
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -25,15 +25,15 @@ const App = () => {
 
   const scrollToArea = () => {
     areaRef.current?.scrollIntoView({ behavior: "smooth" });
-  }
+  };
 
   const isSmallScreen = window.innerWidth <= 768;
 
-  useEffect(() => {
-    if (isSmallScreen) {
-      setShowQuote(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (isSmallScreen) {
+  //     setShowQuote(false);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -44,8 +44,10 @@ const App = () => {
           areaClick={scrollToArea}
         />
         <Header serviceClick={scrollToService} contactClick={scrollToContact} />
-        {isSmallScreen ? <Carousel1 /> : <Services propRef={serviceRef} />}
-        <ServiceAreas propRef={areaRef}/>
+
+        <Services propRef={serviceRef} />
+
+        <ServiceAreas propRef={areaRef} />
         <h1 style={{ marginTop: "3%", color: "rgb(29,41,81)" }}>Contact Us</h1>
       </div>
       <div

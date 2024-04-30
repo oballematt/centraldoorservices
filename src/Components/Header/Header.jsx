@@ -13,7 +13,7 @@ const Header = (props) => {
       <div style={textContainerStyle}>
         <div style={overlayStyle}>
           <h1 style={{ fontSize: "75px" }}>Central Door Services</h1>
-          <h2>Your number one commercial door solution in Austin, Texas!</h2>
+          <h2>Your number one garage door solution in Austin, Texas!</h2>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Button style={buttonStyles} onClick={props.serviceClick}>Services</Button>
             <Button style={buttonStyles} onClick={props.contactClick}>Contact Us</Button>

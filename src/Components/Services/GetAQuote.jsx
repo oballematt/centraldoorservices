@@ -56,13 +56,13 @@ const GetAQuote = () => {
   };
   return (
     <>
-      <Container style={window.innerWidth >= 1483 ? {width: "30%"} : {width: "80%"}}>
+      <Container style={window.innerWidth >= 1483 ? {width: "30%"} : {width: "100%",}}>
         {" "}
         <Col>
           <Card
             style={{
               width: "100%",
-              height: "100%",
+              height: "auto",
               backgroundColor: "rgb(29,41,81)",
             }}
           >
@@ -138,7 +138,7 @@ const GetAQuote = () => {
                     style={{
                       width: "50%",
                       fontSize: "25px",
-                      marginTop: "100px",
+                      marginTop: "50px",
                     }}
                     variant="outline-light"
                     type="submit"

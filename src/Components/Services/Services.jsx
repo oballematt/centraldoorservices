@@ -11,15 +11,15 @@ const Services = (props) => {
   const isSmallScreen = window.innerWidth <= 768;
   return (
     <div style={{ color: "rgb(29 41 81)", marginTop: "50px" }}>
-      <h1 ref={props.propRef} style={{ fontSize: "50px" }}>
+      <h1 ref={props.propRef} style={{ fontSize: "3em" }}>
         Our Services
       </h1>
 
-      <h1 style={{ fontSize: "30px", marginBottom: "50px" }}>
+      <h3 style={{ fontSize: "1.5em", marginBottom: "50px" }}>
         As dedicated specialists in commercial door repair, we strive to bring
         you a wealth of expertise and a commitment to excellence to every
         project.
-      </h1>
+      </h3>
       <Tabs
         defaultActiveKey="services"
         id="uncontrolled-tab-example"

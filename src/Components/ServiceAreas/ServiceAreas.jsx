@@ -20,14 +20,14 @@ const ServiceAreas = (props) => {
     <>
       <h1
         ref={props.propRef}
-        style={{ fontSize: "50px", marginTop: "3%", color: "rgb(29,41,81)" }}
+        style={{ fontSize: "3em", marginTop: "3%", color: "rgb(29,41,81)" }}
       >
         Service Areas
       </h1>
       <h3
         style={{
           letterSpacing: "1px",
-          fontSize: "30px",
+          fontSize: "1.5em",
           color: "rgb(29,41,81)",
         }}
       >

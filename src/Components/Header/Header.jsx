@@ -9,7 +9,6 @@ const Header = (props) => {
         sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px"
         alt="Central Door Services"
         style={imageStyle}
-        loading="lazy"
       />
       <div style={textContainerStyle}>
         <div style={overlayStyle}>

@@ -1,16 +1,15 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import ImageComponent from "../Image/ImageComponent";
 
 const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
-      {/* <img
-        src="/images/shutterstock_2267418927.jpg"
+      <img
+        src="/images/shutterstock_2267418927123.jpg"
         alt="Header Image"
         style={imageStyle}
-      /> */}
-      <ImageComponent styles={imageStyle}/>
+        loading="lazy"
+      />
       <div style={textContainerStyle}>
         <div style={overlayStyle}>
           <h1 style={{ fontSize: "75px" }}>Central Door Services</h1>

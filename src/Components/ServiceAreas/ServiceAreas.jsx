@@ -45,6 +45,7 @@ const ServiceAreas = (props) => {
                 "/images/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"
               }
               loading="lazy"
+              alt="Austin Texas Skyline"
             />
           </Col>
           <Col xl={4}>

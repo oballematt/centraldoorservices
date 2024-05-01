@@ -2,12 +2,15 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 
 const Header = (props) => {
+  // Calculate the dynamic height for the image
+  const imageHeight = window.innerHeight * 0.5; // Adjust the multiplier as needed
+
   return (
     <div style={headerContainerStyle}>
       <img
         src="/images/shutterstock_2267418927123.jpg"
-        alt="Header Image"
-        style={imageStyle}
+        alt="Central Door Services"
+        style={{ ...imageStyle, height: `${imageHeight}px` }} // Set height dynamically
         loading="lazy"
       />
       <div style={textContainerStyle}>
@@ -31,7 +34,6 @@ const headerContainerStyle = {
 
 const imageStyle = {
   width: "100%",
-  maxHeight: "100%",
   objectFit: "cover",
   margin: "0",
 };

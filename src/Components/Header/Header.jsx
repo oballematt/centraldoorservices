@@ -91,21 +91,5 @@ const buttonStyles = {
   letterSpacing: "3px"
 };
 
-// Media query for smaller screens
-// const mediaQuery = `@media screen and (max-width: 768px) {
-//   .header-container {
-//     height: 70vh; /* Adjust as needed */
-//   }
-
-//   .overlay {
-//     padding: 20px 0 40px 0;
-//   }
-
-//   .button-container Button {
-//     font-size: 1.2rem; /* Adjust as needed */
-//     padding: 8px 16px; /* Adjust padding as needed */
-//     margin: 0 5px; /* Adjust margin as needed */
-//   }
-// }`;
 
 export default Header;

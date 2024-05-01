@@ -31,7 +31,7 @@ const headerContainerStyle = {
 
 const imageStyle = {
   width: "100%",
-  height: "630px",
+  maxHeight: "100%",
   objectFit: "cover",
   margin: "0",
 };

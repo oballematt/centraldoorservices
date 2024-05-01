@@ -22,19 +22,19 @@ const Carousel1 = () => {
       title: "Residential Garage Door Installation",
       description:
         "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
-      image: "/images/shutterstock_1661496175.jpg",
+      image: "/images/shutterstock_16614961751.jpg",
     },
     {
       title: "Commercial Overhead Door Repair",
       description:
         "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
-      image: "/images/shutterstock_2032605872.jpg",
+      image: "/images/shutterstock_20326058721.jpg",
     },
     {
       title: "Entry Door Repair",
       description:
         "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
-      image: "/images/shutterstock_707797201.jpg",
+      image: "/images/shutterstock_7077972011.jpg",
     },
   ];
 
@@ -44,7 +44,7 @@ const Carousel1 = () => {
         {content.map((item, idx) => (
           <Carousel.Item>
             <Card key={idx} style={{ width: "100%", height: "100%"  }}>
-              <Card.Img style={{height: "100%"}} variant="top" src={item.image} />
+              <Card.Img loading="lazy" style={{height: "100%"}} variant="top" src={item.image} />
               <Card.Body style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",
                       color: "white",

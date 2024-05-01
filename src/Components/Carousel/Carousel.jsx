@@ -16,25 +16,25 @@ const Carousel1 = () => {
       title: "Residential Garage Door Repair",
       description:
         "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
-      image: "src/assets/shutterstock_621949454.jpg",
+      image: "/images/shutterstock_621949454.jpg",
     },
     {
       title: "Residential Garage Door Installation",
       description:
         "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
-      image: "src/assets/shutterstock_1661496175.jpg",
+      image: "/images/shutterstock_1661496175.jpg",
     },
     {
       title: "Commercial Overhead Door Repair",
       description:
         "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
-      image: "src/assets/shutterstock_2032605872.jpg",
+      image: "/images/shutterstock_2032605872.jpg",
     },
     {
       title: "Entry Door Repair",
       description:
         "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
-      image: "src/assets/shutterstock_707797201.jpg",
+      image: "/images/shutterstock_707797201.jpg",
     },
   ];
 

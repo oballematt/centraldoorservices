@@ -19,6 +19,7 @@ function Navibar(props) {
                 : "/images/Untitled17_202404122345591.png"
                 
             }
+            alt="Central Door Services"
           />
           {window.innerWidth <= 991 ? 'Central Door Services' : ""}
         </Navbar.Brand>

@@ -42,7 +42,7 @@ const ServiceAreas = (props) => {
               fluid
               style={{ width: "100%", height: "100%" }}
               src={
-                "./src/assets/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"
+                "/images/austin-texas-usa-sunrise-skyline-600nw-681676399.webp"
               }
             />
           </Col>

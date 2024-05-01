@@ -15,8 +15,8 @@ function Navibar(props) {
             style={window.innerWidth <= 991 ? { height: "50px", marginRight: "20px" }  :  { height: "200px" }}
             src={
               window.innerWidth <= 991
-                ? "src/assets/Untitled17_20240412234613.PNG"
-                : "src/assets/Untitled17_20240412234559.PNG"
+                ? "/images/Untitled17_20240412234613.PNG"
+                : "/images/Untitled17_20240412234559.PNG"
                 
             }
           />

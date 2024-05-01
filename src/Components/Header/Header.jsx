@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
       <img
-        src="src/assets/shutterstock_2267418927.jpg"
+        src="/images/shutterstock_2267418927.jpg"
         alt="Header Image"
         style={imageStyle}
       />
@@ -17,8 +17,6 @@ const Header = (props) => {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Button style={buttonStyles} onClick={props.serviceClick}>Services</Button>
             <Button style={buttonStyles} onClick={props.contactClick}>Contact Us</Button>
-            {/* <Button2 onClick={props.onClickService} style={{ marginRight: "10px" }}>Our Services</Button2>
-            <Button2  onClick={props.onClickContact}>Contact US</Button2> */}
           </div>
         </div>
       </div>

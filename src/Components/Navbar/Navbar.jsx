@@ -21,7 +21,9 @@ function Navibar(props) {
             }
             alt="Central Door Services"
           />
-          {window.innerWidth <= 991 ? 'Central Door Services' : ""}
+          {window.innerWidth <= 991 
+          ? (window.innerWidth <= 381 ? "" : 'Central Door Services')
+          : ""}
         </Navbar.Brand>
         <Navbar.Toggle
           style={{ backgroundColor: "white" }}

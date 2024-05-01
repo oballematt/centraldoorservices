@@ -28,7 +28,7 @@ const Contact = (props) => {
       first_name: firstName,
       last_name: lastName,
       number: phoneNumber,
-      from_email: email,
+      email: email,
       to_name: "Joseph Ingram",
       message: message,
     };

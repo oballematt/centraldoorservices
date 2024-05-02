@@ -53,9 +53,10 @@ function Navibar(props) {
           </Nav>
           <Nav className="ml-auto">
             <Nav.Link
+            href="tel:737-307-6006"
               style={{ color: "white", letterSpacing: "2px", fontSize: "20px" }}
             >
-              {isSmallScreen ? <a style={{textDecoration: "none", color: "white"}} href="tel:737-307-6006">737-307-6006</a>: "737-307-6006"}
+              (737) 307-6006
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

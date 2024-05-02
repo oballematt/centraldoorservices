@@ -56,11 +56,10 @@ const Contact = (props) => {
     <>
       <Form
         ref={props.propRef}
-        // style={{ width: "50%",  color: "white" }}
         style={window.innerWidth <= 768 ? {width: "80%", color: "white"} : {width: "50%", color: "white"}}
         onSubmit={handleSubmit}
       >
-         <h1 style={{textAlign: "center", marginBottom:"25px", marginTop: "25px"}}>Call 737-307-6006</h1>
+         <h1 style={{textAlign: "center", marginBottom:"25px", marginTop: "25px"}}>Call (737) 307-6006</h1>
         <Row className="mb-3">
          
           <Form.Group as={Col}>

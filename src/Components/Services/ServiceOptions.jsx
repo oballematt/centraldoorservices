@@ -7,25 +7,25 @@ import Col from "react-bootstrap/Col";
 const ServiceOptions = () => {
   const imgUrl = [
     {
-      imageUrl: `/images/shutterstock_621949454.jpg`,
+      imageUrl: "/images/shutterstock-621949454-6632edcf9baca.webp",
       serviceTitle: "Residential Garage Door Repair",
       serviceDescription:
         "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
     },
     {
-      imageUrl: `/images/shutterstock_16614961751.jpg`,
+      imageUrl: "/images/shutterstock-16614961751-6632edd07244f.webp",
       serviceTitle: "Residential Garage Door Installation",
       serviceDescription:
         "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
     },
     {
-      imageUrl: `/images/shutterstock_20326058721.jpg`,
+      imageUrl: "/images/shutterstock-20326058721-6632edd08ad8b.webp",
       serviceTitle: "Commercial Overhead Door Repair",
       serviceDescription:
         "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
     },
     {
-      imageUrl: `/images/shutterstock_7077972011.jpg`,
+      imageUrl: "/images/shutterstock-7077972011-6632edcf9bd6e.webp",
       serviceTitle: "Entry Door Repair",
       serviceDescription:
         "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
@@ -39,7 +39,7 @@ const ServiceOptions = () => {
             {imgUrl.map((item, idx) => (
               <Col key={idx}>
                 <Card style={{ border: "0", height: "100%" }}>
-                  <Card.Img alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
+                  <Card.Img loading="lazy" alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
                   <Card.Body
                     style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",

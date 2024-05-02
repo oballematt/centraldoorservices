@@ -16,25 +16,25 @@ const Carousel1 = () => {
       title: "Residential Garage Door Repair",
       description:
         "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
-      image: "/images/shutterstock_621949454.jpg",
+        image: "/images/shutterstock-621949454-6632edcf9baca.webp",
     },
     {
       title: "Residential Garage Door Installation",
       description:
         "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
-      image: "/images/shutterstock_16614961751.jpg",
+      image: "/images/shutterstock-16614961751-6632edd07244f.webp",
     },
     {
       title: "Commercial Overhead Door Repair",
       description:
         "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
-      image: "/images/shutterstock_20326058721.jpg",
+      image: "/images/shutterstock-20326058721-6632edd08ad8b.webp",
     },
     {
       title: "Entry Door Repair",
       description:
         "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
-      image: "/images/shutterstock_7077972011.jpg",
+      image: "/images/shutterstock-7077972011-6632edcf9bd6e.webp",
     },
   ];
 
@@ -44,7 +44,7 @@ const Carousel1 = () => {
         {content.map((item, idx) => (
           <Carousel.Item>
             <Card key={idx} style={{ width: "100%", height: "100%"  }}>
-              <Card.Img loading="lazy" style={{height: "100%"}} variant="top" src={item.image} />
+              <Card.Img alt={item.description} style={{height: "100%"}} variant="top" src={item.image} />
               <Card.Body style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",
                       color: "white",

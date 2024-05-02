@@ -16,8 +16,8 @@ function Navibar(props) {
             style={window.innerWidth <= 991 ? { height: "50px", marginRight: "20px" }  :  { height: "200px" }}
             src={
               window.innerWidth <= 991
-                ? "/images/Untitled17_202404122346131.png"
-                : "/images/Untitled17_202404122345591.png"
+                ? "/images/untitled17-202404122346131-6632efdb7e311.webp"
+                : "/images/untitled17-202404122345591-6632efdb353d8.webp"
                 
             }
             alt="Central Door Services"

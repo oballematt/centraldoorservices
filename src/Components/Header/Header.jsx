@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
       <img
-        srcSet="/images/shutterstock_2267418927123.jpg 400w, /images/shutterstock_2267418927123.jpg 800w, /images/shutterstock_2267418927123.jpg 1200w"
+        srcSet="/images/shutterstock-2267418927123-6632edd136290.webp 400w, /images/shutterstock-2267418927123-6632edd136290.webp 800w, /images/shutterstock-2267418927123-6632edd136290.webp 1200w"
         sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px"
         alt="Central Door Services"
         style={imageStyle}

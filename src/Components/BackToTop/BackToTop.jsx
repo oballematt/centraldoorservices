@@ -34,7 +34,7 @@ const BackToTop = () => {
         display: showButton ? "block" : "none",
         position: "fixed",
         bottom: "20px",
-        right: "20px",
+        left: "20px",
         padding: "10px",
         backgroundColor: "#007BFF",
         maxWidth: "200px",

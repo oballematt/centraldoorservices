@@ -1,4 +1,7 @@
-.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+.carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: rgb(29, 41, 81)
 }
 
+.carousel-indicators{
+    bottom: -18px;
+}

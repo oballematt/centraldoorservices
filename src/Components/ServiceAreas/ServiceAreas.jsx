@@ -58,9 +58,9 @@ const ServiceAreas = (props) => {
               }}
             >
               <Card.Body>
-                <Card.Text style={{ textAlign: "left" }}>
+                <Card.Text>
                   {serviceAreas.map((item, idx) => (
-                    <ListGroup horizontal key={idx}>
+                    <ListGroup  key={idx}>
                       <ListGroup.Item
                         style={{
                           fontSize: "30px",

@@ -40,7 +40,7 @@ const Carousel1 = () => {
 
   return (
     <>
-      <Carousel slide={false} pause={'hover'} interval={4000} style={{height: "680px"}} activeIndex={index} onSelect={handleSelect}>
+      <Carousel slide={false} pause={'hover'} interval={4000} style={{height: "auto"}} activeIndex={index} onSelect={handleSelect}>
         {content.map((item, idx) => (
           <Carousel.Item>
             <Card key={idx} style={{ width: "100%", height: "100%"  }}>

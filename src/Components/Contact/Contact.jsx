@@ -15,6 +15,7 @@ const Contact = (props) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const isSmallScreen = window.innerWidth <= 768;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +60,7 @@ const Contact = (props) => {
         style={window.innerWidth <= 768 ? {width: "80%", color: "white"} : {width: "50%", color: "white"}}
         onSubmit={handleSubmit}
       >
-         <h1 style={{textAlign: "center", marginBottom:"25px", marginTop: "25px"}}>Call (737) 307-6006</h1>
+         <h1 style={{textAlign: "center", marginBottom:"25px", marginTop: "25px"}}>Call {isSmallScreen ? <a style={{textDecoration: "none", color: "white"}} href="tel:737-307-6006">(737) 307-6006</a>: "(737) 307-6006"}</h1>
         <Row className="mb-3">
          
           <Form.Group as={Col}>

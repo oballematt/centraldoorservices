@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 function Navibar(props) {
+  const isSmallScreen = window.innerWidth <= 768;
   return (
     <Navbar
       sticky="top"
@@ -54,7 +55,7 @@ function Navibar(props) {
             <Nav.Link
               style={{ color: "white", letterSpacing: "2px", fontSize: "20px" }}
             >
-              737-307-6006
+              {isSmallScreen ? <a style={{textDecoration: "none", color: "white"}} href="tel:737-307-6006">737-307-6006</a>: "737-307-6006"}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

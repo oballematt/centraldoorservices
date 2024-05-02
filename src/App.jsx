@@ -4,7 +4,6 @@ import Services from "./Components/Services/Services";
 import Header from "./Components/Header/Header";
 import ServiceAreas from "./Components/ServiceAreas/ServiceAreas";
 import Contact from "./Components/Contact/Contact";
-import Carousel1 from "./Components/Carousel/Carousel";
 import BackToTop from "./Components/BackToTop/BackToTop";
 import { Helmet } from "react-helmet";
 

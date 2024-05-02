@@ -39,7 +39,7 @@ const ServiceOptions = () => {
             {imgUrl.map((item, idx) => (
               <Col key={idx}>
                 <Card style={{ border: "0", height: "100%" }}>
-                  <Card.Img alt={item.serviceDescription} variant="top" src={item.imageUrl} loading="lazy"/>
+                  <Card.Img alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
                   <Card.Body
                     style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",

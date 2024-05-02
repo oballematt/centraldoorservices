@@ -68,7 +68,13 @@ const App = () => {
         <Services propRef={serviceRef} />
 
         <ServiceAreas propRef={areaRef} />
-        <h1 style={{ marginTop: "3%", color: "rgb(29,41,81)" }}>Contact Us</h1>
+        {isSmallScreen ? (
+          ""
+        ) : (
+          <h1 style={{ marginTop: "3%", color: "rgb(29,41,81)" }}>
+            Contact Us
+          </h1>
+        )}
       </div>
       <div
         style={{

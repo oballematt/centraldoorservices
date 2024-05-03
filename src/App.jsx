@@ -87,7 +87,7 @@ const App = () => {
       >
         <Contact propRef={contactRef} />
       </div>
-      <BackToTop />
+      {isSmallScreen ? "" : <BackToTop />}
     </>
   );
 };

@@ -5,8 +5,7 @@ const Header = (props) => {
   return (
     <div style={headerContainerStyle}>
       <img
-        srcSet="/images/shutterstock-2267418927123-6632edd136290.webp 400w, /images/shutterstock-2267418927123-6632edd136290.webp 800w, /images/shutterstock-2267418927123-6632edd136290.webp 1200w"
-        sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px"
+        src="https://d2q0snk2i1y1r8.cloudfront.net/opt_header.webp"
         alt="Central Door Services"
         style={imageStyle}
       />

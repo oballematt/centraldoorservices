@@ -13,6 +13,7 @@ const App = () => {
   const contactRef = useRef(null);
   const serviceRef = useRef(null);
   const areaRef = useRef(null);
+  const aboutUsRef = useRef(null)
 
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -25,6 +26,10 @@ const App = () => {
 
   const scrollToArea = () => {
     areaRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = () => {
+    aboutUsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const isSmallScreen = window.innerWidth <= 768;
@@ -74,6 +79,7 @@ const App = () => {
           serviceClick={scrollToService}
           contactClick={scrollToContact}
           areaClick={scrollToArea}
+          aboutUs={scrollToAbout}
         />
         <Header serviceClick={scrollToService} contactClick={scrollToContact} />
 
@@ -94,7 +100,7 @@ const App = () => {
           display: "flex",
         }}
       >
-        <AboutUs />
+        <AboutUs propRef={aboutUsRef}/>
       </div>
 
       <h1

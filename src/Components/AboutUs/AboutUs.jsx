@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const AboutUs = () => {
+const AboutUs = (props) => {
   const isSmallScreen = window.innerWidth <= 768;
 
   return (
-    <Container style={{ padding: "20px" }}>
+    <Container ref={props.propRef} style={{ padding: "20px" }}>
       <Row className="align-items-center">
         {isSmallScreen ? (
           ""

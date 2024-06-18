@@ -13,7 +13,7 @@ const Header = (props) => {
       <div style={textContainerStyle}>
         <div style={overlayStyle}>
           <h1 style={headerTextStyle}>Central Door Services</h1>
-          <h2 style={subheaderTextStyle}>Your number one garage door solution in Austin, Texas!</h2>
+          <h2 style={subheaderTextStyle}>Your number one commercial door solution in Austin, Texas!</h2>
           <div style={buttonContainerStyle}>
             <Button style={buttonStyles} onClick={props.serviceClick}>
               Services

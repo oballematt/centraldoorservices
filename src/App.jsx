@@ -3,8 +3,10 @@ import Navibar from "./Components/Navbar/Navbar";
 import Services from "./Components/Services/Services";
 import Header from "./Components/Header/Header";
 import ServiceAreas from "./Components/ServiceAreas/ServiceAreas";
+import AboutUs from "./Components/AboutUs/AboutUs";
 import Contact from "./Components/Contact/Contact";
 import BackToTop from "./Components/BackToTop/BackToTop";
+import Footer from "./Components/Footer/Footer";
 import { Helmet } from "react-helmet";
 
 const App = () => {
@@ -31,31 +33,42 @@ const App = () => {
     <>
       <div style={{ textAlign: "center", color: "rgb(85 99 90)" }}>
         <Helmet>
-          <title>Central Door Services</title>
+          <title>
+            Central Door Services
+          </title>
           <meta
             name="description"
-            content="Welcome to central door services. Your number one solution for commercial and residential garage door installations and repairs in Austin, Texas"
-          ></meta>
+            content="Central Door Services offers top-notch commercial and residential garage door installations and repairs in Austin, Texas. Contact us today for reliable and professional service."
+          />
           <meta
             name="keywords"
-            content="garage, door, garage door, repair, installation, Austin, Texas, commercial, residential"
-          ></meta>
-          <meta property="og:title" content="Central Door Services" />
+            content="garage door repair, commercial, commercial installation, garage door installation, Austin, TX, commercial garage doors, residential garage doors, Central Door Services"
+          />
+          <meta
+            property="og:title"
+            content="Central Door Services | Commercial Door Installations & Repairs in Austin, TX"
+          />
           <meta
             property="og:description"
-            content="Welcome to central door services. Your number one solution for commercial and residential garage door installations and repairs in Austin, Texas"
+            content="Central Door Services is your trusted provider for commercial and residential garage door installations and repairs in Austin, Texas."
           />
           <meta property="og:image" content="https://imgur.com/zdXJVgy" />
           <meta
             property="og:url"
             content="https://www.centraldoorservices.com"
           />
-          <meta name="twitter:title" content="Central Door Services" />
+          <meta property="og:type" content="website" />
+          <meta
+            name="twitter:title"
+            content="Central Door Services | Commercial Door Installations & Repairs in Austin, TX"
+          />
           <meta
             name="twitter:description"
-            content="Welcome to central door services. Your number one solution for commercial and residential garage door installations and repairs in Austin, Texas"
+            content="Central Door Services offers reliable commercial door installations and repairs for both commercial and residential clients in Austin, Texas."
           />
           <meta name="twitter:image" content="https://imgur.com/zdXJVgy" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <link rel="canonical" href="https://www.centraldoorservices.com" />
         </Helmet>
         <Navibar
           serviceClick={scrollToService}
@@ -67,18 +80,37 @@ const App = () => {
         <Services propRef={serviceRef} />
 
         <ServiceAreas propRef={areaRef} />
-        {isSmallScreen ? (
-          ""
-        ) : (
-          <h1 style={{ marginTop: "3%", color: "rgb(29,41,81)" }}>
-            Contact Us
-          </h1>
-        )}
       </div>
+      <h1
+        style={{ textAlign: "center", marginTop: "3%", color: "rgb(29,41,81)" }}
+      >
+        About Us
+      </h1>
       <div
         style={{
           backgroundColor: "rgb(29,41,81)",
-          height: "550px",
+          margin: "auto",
+          justifyContent: "center",
+          display: "flex",
+        }}
+      >
+        <AboutUs />
+      </div>
+
+      <h1
+        style={{
+          textAlign: "center",
+          marginTop: "3%",
+          color: "rgb(29,41,81)",
+        }}
+      >
+        Contact Us
+      </h1>
+
+      <div
+        style={{
+          backgroundColor: "rgb(29,41,81)",
+          height: "500px",
           width: "100%",
           margin: "auto",
           justifyContent: "center",
@@ -88,6 +120,7 @@ const App = () => {
         <Contact propRef={contactRef} />
       </div>
       {isSmallScreen ? "" : <BackToTop />}
+      <Footer />
     </>
   );
 };

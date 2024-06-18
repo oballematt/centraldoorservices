@@ -9,11 +9,11 @@ import Image from "react-bootstrap/Image";
 const ServiceAreas = (props) => {
   const serviceAreas = [
     "Austin",
-    "Marble Falls",
-    "Horseshoe Bay",
     "Georgetown",
     "Round Rock",
     "Cedar Park",
+    "Marble Falls",
+    "Horseshoe Bay",
     "And More...",
   ];
   return (
@@ -26,7 +26,7 @@ const ServiceAreas = (props) => {
       </h1>
       <h3
         style={{
-          letterSpacing: "1px",
+
           fontSize: "1.5em",
           color: "rgb(29,41,81)",
         }}

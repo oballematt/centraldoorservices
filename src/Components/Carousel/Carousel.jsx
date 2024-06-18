@@ -13,28 +13,34 @@ const Carousel1 = () => {
 
   const content = [
     {
-      title: "Residential Garage Door Repair",
-      description:
-        "We can schedule a service call to diagnose any issues you may be experiencing with your garage door. Contact us today to hear from one of our specialists",
-        image: "/images/shutterstock-621949454-6632edcf9baca.webp",
+      imageUrl: "/images/slidedoor_1_1.webp",
+      serviceTitle: "Automatic Door Repair Swing/Slide",
+      serviceDescription:
+        "Expert repair services for both swinging and sliding automatic doors, ensuring smooth, reliable, and safe operation for commercial entrances.",
     },
     {
-      title: "Residential Garage Door Installation",
-      description:
-        "We can install doors on new construction homes, or replace your old door with a new one. Contact us for more information.",
-      image: "/images/shutterstock-16614961751-6632edd07244f.webp",
+      imageUrl: "/images/store_font_1_1.webp",
+      serviceTitle: "Storefront",
+      serviceDescription:
+        "Specialized repair services for commercial storefront doors and windows, including glass replacement, frame adjustment, and sealing to enhance curb appeal and energy efficiency.",
     },
     {
-      title: "Commercial Overhead Door Repair",
-      description:
-        "We can service your commercial door to help your business operate more efficiantly and securely. Also contact us to learn more about Preventive Maintenance options.",
-      image: "/images/shutterstock-20326058721-6632edd08ad8b.webp",
+      imageUrl: "/images/metal_door_1_1.webp",
+      serviceTitle: "Hollow Metal",
+      serviceDescription:
+        " Professional repair and maintenance of hollow metal doors, focusing on structural integrity, and hardware performance for robust security and durability.",
     },
     {
-      title: "Entry Door Repair",
-      description:
-        "Let us know what entry door issues you are experiencing and we will see what we can do to help.",
-      image: "/images/shutterstock-7077972011-6632edcf9bd6e.webp",
+      imageUrl: "/images/storefront_1_1.webp",
+      serviceTitle: "Entry Door Repair",
+      serviceDescription:
+        "Comprehensive repair solutions for entry doors, addressing issues like alignment, hardware malfunction, and weatherproofing to maintain security and functionality.",
+    },
+    {
+      imageUrl: "/images/revolving_1_1.webp",
+      serviceTitle: "Revolving Doors",
+      serviceDescription:
+        "Skilled repair services for revolving doors, ensuring seamless rotation, safety compliance, and energy efficiency for high-traffic commercial environments.",
     },
   ];
 
@@ -44,13 +50,13 @@ const Carousel1 = () => {
         {content.map((item, idx) => (
           <Carousel.Item>
             <Card key={idx} style={{ width: "100%", height: "100%"  }}>
-              <Card.Img alt={item.description} style={{height: "100%"}} variant="top" src={item.image} />
+              <Card.Img alt={item.serviceDescription} style={{height: "100%"}} variant="top" src={item.imageUrl} />
               <Card.Body style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",
                       color: "white",
                     }}>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>{item.description}</Card.Text>
+                <Card.Title>{item.serviceTitle}</Card.Title>
+                <Card.Text>{item.serviceDescription}</Card.Text>
               </Card.Body>
             </Card>
           </Carousel.Item>

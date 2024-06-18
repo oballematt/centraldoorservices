@@ -119,10 +119,11 @@ const GetAQuote = () => {
                       value={quoteOption}
                     >
                       <option>Service</option>
-                      <option>Residential Garage Door Repair</option>
-                      <option>Residential Garage Door Installation</option>
-                      <option>Commercial Overhead Door Repair</option>
+                      <option>Automatic Door Repair Swing/Slide</option>
                       <option>Entry Door Repair</option>
+                      <option>Storefront</option>
+                      <option>Hollow Metal</option>
+                      <option>Revolving Doors</option>
                     </Form.Select>
                   </Form.Group>
                   <Form.Group className="mb-3">

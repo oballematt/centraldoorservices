@@ -7,31 +7,31 @@ import Col from "react-bootstrap/Col";
 const ServiceOptions = () => {
   const imgUrl = [
     {
-      imageUrl: "/images/slidedoor_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_sliding.webp",
       serviceTitle: "Automatic Door Repair Swing/Slide",
       serviceDescription:
         "Expert repair services for both swinging and sliding automatic doors, ensuring smooth, reliable, and safe operation for commercial entrances.",
     },
     {
-      imageUrl: "/images/store_font_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_store_front.webp",
       serviceTitle: "Storefront",
       serviceDescription:
         "Specialized repair services for commercial storefront doors and windows, including glass replacement, frame adjustment, and sealing to enhance curb appeal and energy efficiency.",
     },
     {
-      imageUrl: "/images/metal_door_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_metal.webp",
       serviceTitle: "Hollow Metal",
       serviceDescription:
         " Professional repair and maintenance of hollow metal doors, focusing on structural integrity, and hardware performance for robust security and durability.",
     },
     {
-      imageUrl: "/images/storefront_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_entry_door.webp",
       serviceTitle: "Entry Door Repair",
       serviceDescription:
         "Comprehensive repair solutions for entry doors, addressing issues like alignment, hardware malfunction, and weatherproofing to maintain security and functionality.",
     },
     {
-      imageUrl: "/images/revolving_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_revolving.webp",
       serviceTitle: "Revolving Doors",
       serviceDescription:
         "Skilled repair services for revolving doors, ensuring seamless rotation, safety compliance, and energy efficiency for high-traffic commercial environments.",
@@ -41,11 +41,11 @@ const ServiceOptions = () => {
     <Container fluid style={{ marginTop: "1%", width: "100%" }}>
       <Row>
         <Col>
-          <Row xs={1} md={1} lg={2} xl={2} xxl={5} className="g-4">
+          <Row xs={1} md={2} lg={2} xl={2} xxl={5} className="g-4">
             {imgUrl.map((item, idx) => (
               <Col key={idx}>
-                <Card style={{ border: "0", height: "100%" }}>
-                  <Card.Img style={{height: "70%"}} loading="lazy" alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
+                <Card style={{ border: "0", height: "100%"}}>
+                  <Card.Img style={{height: "60%"}} loading="lazy" alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
                   <Card.Body
                     style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",

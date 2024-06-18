@@ -13,31 +13,31 @@ const Carousel1 = () => {
 
   const content = [
     {
-      imageUrl: "/images/slidedoor_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_sliding.webp",
       serviceTitle: "Automatic Door Repair Swing/Slide",
       serviceDescription:
         "Expert repair services for both swinging and sliding automatic doors, ensuring smooth, reliable, and safe operation for commercial entrances.",
     },
     {
-      imageUrl: "/images/store_font_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_store_front.webp",
       serviceTitle: "Storefront",
       serviceDescription:
         "Specialized repair services for commercial storefront doors and windows, including glass replacement, frame adjustment, and sealing to enhance curb appeal and energy efficiency.",
     },
     {
-      imageUrl: "/images/metal_door_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_metal.webp",
       serviceTitle: "Hollow Metal",
       serviceDescription:
         " Professional repair and maintenance of hollow metal doors, focusing on structural integrity, and hardware performance for robust security and durability.",
     },
     {
-      imageUrl: "/images/storefront_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_entry_door.webp",
       serviceTitle: "Entry Door Repair",
       serviceDescription:
         "Comprehensive repair solutions for entry doors, addressing issues like alignment, hardware malfunction, and weatherproofing to maintain security and functionality.",
     },
     {
-      imageUrl: "/images/revolving_1_1.webp",
+      imageUrl: "https://d2q0snk2i1y1r8.cloudfront.net/opt_revolving.webp",
       serviceTitle: "Revolving Doors",
       serviceDescription:
         "Skilled repair services for revolving doors, ensuring seamless rotation, safety compliance, and energy efficiency for high-traffic commercial environments.",
@@ -50,7 +50,7 @@ const Carousel1 = () => {
         {content.map((item, idx) => (
           <Carousel.Item>
             <Card key={idx} style={{ width: "100%", height: "100%"  }}>
-              <Card.Img alt={item.serviceDescription} style={{height: "100%"}} variant="top" src={item.imageUrl} />
+              <Card.Img alt={item.serviceDescription} style={{height: "60%"}} variant="top" src={item.imageUrl} />
               <Card.Body style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",
                       color: "white",

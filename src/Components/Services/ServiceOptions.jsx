@@ -44,12 +44,20 @@
 //           <Row xs={1} md={2} lg={2} xl={2} xxl={5} className="g-4">
 //             {imgUrl.map((item, idx) => (
 //               <Col key={idx}>
-//                 <Card style={{ border: "0", height: "100%"}}>
-//                   <Card.Img style={{height: "60%"}} loading="lazy" alt={item.serviceDescription} variant="top" src={item.imageUrl}/>
+//                 <Card style={{ border: "0", height: "80%" }}>
+//                   <Card.Img
+//                     style={{ height: "60%" }}
+//                     loading="lazy"
+//                     alt={item.serviceDescription}
+//                     variant="top"
+//                     src={item.imageUrl}
+//                   />
+
 //                   <Card.Body
 //                     style={{
 //                       backgroundColor: "rgba(29, 41, 81, 0.8)",
 //                       color: "white",
+//                       height: "10%",
 //                     }}
 //                   >
 //                     <Card.Title style={{ fontSize: "25px" }}>

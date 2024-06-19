@@ -49,8 +49,8 @@ const Carousel1 = () => {
       <Carousel slide={false} pause={'hover'} interval={4000} style={{height: "auto"}} activeIndex={index} onSelect={handleSelect}>
         {content.map((item, idx) => (
           <Carousel.Item>
-            <Card key={idx} style={{ width: "100%", height: "100%"  }}>
-              <Card.Img alt={item.serviceDescription} style={{height: "60%"}} variant="top" src={item.imageUrl} />
+            <Card key={idx} style={{ width: "100%", height: "60%"  }}>
+              <Card.Img alt={item.serviceDescription} style={{height: "500px"}} variant="top" src={item.imageUrl} />
               <Card.Body style={{
                       backgroundColor: "rgba(29, 41, 81, 0.8)",
                       color: "white",

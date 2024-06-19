@@ -33,6 +33,9 @@ const Contact = (props) => {
       to_name: "Joseph Ingram",
       message: message,
     };
+    emailjs.init(publicKey, null, {
+      limitRate: 1 / (5 * 60),
+    });
 
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
@@ -57,12 +60,33 @@ const Contact = (props) => {
     <>
       <Form
         ref={props.propRef}
-        style={window.innerWidth <= 768 ? {width: "80%", color: "white"} : {width: "50%", color: "white"}}
+        style={
+          window.innerWidth <= 768
+            ? { width: "80%", color: "white" }
+            : { width: "50%", color: "white" }
+        }
         onSubmit={handleSubmit}
       >
-         <h1 style={{textAlign: "center", marginBottom:"25px", marginTop: "25px"}}>Call {isSmallScreen ? <a style={{textDecoration: "none", color: "white"}} href="tel:737-307-6006">(737) 307-6006</a>: "(737) 307-6006"}</h1>
+        <h1
+          style={{
+            textAlign: "center",
+            marginBottom: "25px",
+            marginTop: "25px",
+          }}
+        >
+          Call{" "}
+          {isSmallScreen ? (
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="tel:737-307-6006"
+            >
+              (737) 307-6006
+            </a>
+          ) : (
+            "(737) 307-6006"
+          )}
+        </h1>
         <Row className="mb-3">
-         
           <Form.Group as={Col}>
             <Form.Label>First Name</Form.Label>
             <Form.Control

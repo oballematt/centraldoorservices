@@ -34,6 +34,9 @@ const GetAQuote = () => {
       message: message,
       quote: quoteOption,
     };
+    emailjs.init(publicKey, null, {
+      limitRate: 1 / (5 * 60) 
+  });
 
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)

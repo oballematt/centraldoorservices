@@ -8,7 +8,7 @@ import Carousel1 from "../Carousel/Carousel";
 import "./Service.css";
 
 const Services = (props) => {
-  const isSmallScreen = window.innerWidth <= 1024;
+  const isSmallScreen = window.innerWidth <= 992;
   return (
     <div style={{ color: "rgb(29 41 81)", marginTop: "50px" }}>
       <h1 ref={props.propRef} style={{ fontSize: "3em" }}>

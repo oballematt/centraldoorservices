@@ -33,9 +33,15 @@ const Contact = (props) => {
       to_name: "Joseph Ingram",
       message: message,
     };
-    emailjs.init(publicKey, null, {
-      limitRate: 1 / (5 * 60),
-    });
+    // emailjs.init({
+    //   publicKey: publicKey,
+    //   limitRate: {
+    //     // Set the limit rate for the application
+    //     id: 'app',
+    //     // Allow 1 request per 10s
+    //     throttle: 30000,
+    //   },
+    // });
 
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)

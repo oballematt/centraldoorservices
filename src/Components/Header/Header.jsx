@@ -12,14 +12,20 @@ const Header = (props) => {
       <div style={textContainerStyle}>
         <div style={overlayStyle}>
           <h1 style={headerTextStyle}>Central Door Services</h1>
-          <h2 style={subheaderTextStyle}>Your number one commercial door solution in Austin, Texas!</h2>
+          <h2 style={subheaderTextStyle}>
+            Your number one commercial door solution in Austin, Texas!
+          </h2>
           <div style={buttonContainerStyle}>
             <Button style={buttonStyles} onClick={props.serviceClick}>
-              Services
+              SERVICES
             </Button>
-            <Button style={buttonStyles} onClick={props.contactClick}>
-              Contact Us
-            </Button>
+            <a
+              href="https://clienthub.getjobber.com/booking/c0f85abf-de78-419e-af72-61ab6a1f99ae"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button style={buttonStyles}>BOOK APPOINTMENT</Button>
+            </a>
           </div>
         </div>
       </div>
@@ -57,7 +63,6 @@ const overlayStyle = {
 const headerTextStyle = {
   fontSize: "3rem",
   letterSpacing: "3px",
- 
 };
 
 const subheaderTextStyle = {
@@ -79,15 +84,13 @@ const buttonStyles = {
   boxShadow: "rgba(245, 244, 247, .25) 0 1px 1px inset",
   color: "#fff",
   cursor: "pointer",
-  fontFamily: "Bebas Neue, sans-serif",
   fontSize: "1.5rem",
   fontWeight: "500",
   lineHeight: "1.5",
   textAlign: "center",
   padding: "10px 20px",
   margin: "0 10px",
-  letterSpacing: "3px"
+  letterSpacing: "3px",
 };
-
 
 export default Header;

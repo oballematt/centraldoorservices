@@ -35,7 +35,6 @@ const GetAQuote = () => {
       quote: quoteOption,
     };
 
-
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
@@ -57,7 +56,9 @@ const GetAQuote = () => {
   };
   return (
     <>
-      <Container style={window.innerWidth >= 1483 ? {width: "30%"} : {width: "100%",}}>
+      <Container
+        style={window.innerWidth >= 1483 ? { width: "30%" } : { width: "100%" }}
+      >
         {" "}
         <Col>
           <Card
@@ -153,7 +154,6 @@ const GetAQuote = () => {
           </Card>
         </Col>
       </Container>
-  
     </>
   );
 };

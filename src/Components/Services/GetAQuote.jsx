@@ -35,6 +35,7 @@ const GetAQuote = () => {
       quote: quoteOption,
     };
 
+
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {

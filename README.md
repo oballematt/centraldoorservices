@@ -977,36 +977,10 @@ centraldoorservices
 ├─ src
 │  ├─ App.jsx
 │  ├─ Components
-│  │  ├─ BackToTop
-│  │  │  └─ BackToTop.jsx
 │  │  ├─ Blog
 │  │  │  ├─ Blog.jsx
 │  │  │  ├─ BlogHeader.jsx
 │  │  │  └─ BlogHome.jsx
-│  │  ├─ Breadcrumb
-│  │  │  └─ Breadcrumb.jsx
-│  │  ├─ Carousel
-│  │  │  ├─ Carousel.css
-│  │  │  └─ Carousel.jsx
-│  │  ├─ Contact
-│  │  │  └─ Contact.jsx
-│  │  ├─ Footer
-│  │  │  └─ Footer.jsx
-│  │  ├─ Header
-│  │  │  └─ Header.jsx
-│  │  ├─ Home
-│  │  │  └─ Home.jsx
-│  │  ├─ Navbar
-│  │  │  └─ Navbar.jsx
-│  │  ├─ ServiceAreas
-│  │  │  └─ ServiceAreas.jsx
-│  │  ├─ Services
-│  │  │  ├─ GetAQuote.jsx
-│  │  │  ├─ Service.css
-│  │  │  ├─ ServiceOptions.jsx
-│  │  │  └─ Services.jsx
-│  │  └─ Tabs
-│  │     └─ Tabs.jsx
 │  ├─ main.jsx
 │  └─ Utils
 │     ├─ ArrayData.jsx

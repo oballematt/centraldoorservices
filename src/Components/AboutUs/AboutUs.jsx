@@ -25,8 +25,8 @@ const AboutUs = (props) => {
               className="text-center mb-4 mb-md-0 d-none d-md-block"
             >
               <img
-                src="images/TVC_VOB_Logo_-_Transparent_new.webp"
-                alt="Company Logo"
+                src="https://d2q0snk2i1y1r8.cloudfront.net/opt_tvc_logo.webp"
+                alt="TVC Logo"
                 style={{
                   maxWidth: "100%",
                   height: "auto",

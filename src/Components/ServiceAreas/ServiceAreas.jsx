@@ -5,17 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import Image from "react-bootstrap/Image";
+import { serviceAreas } from "../../Utils/ArrayData";
 
 const ServiceAreas = (props) => {
-  const serviceAreas = [
-    "Austin",
-    "Georgetown",
-    "Round Rock",
-    "Cedar Park",
-    "Marble Falls",
-    "Horseshoe Bay",
-    "And More...",
-  ];
   return (
     <>
       <h1

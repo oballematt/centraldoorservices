@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Components/Home/Home";
+import BlogHome from "./Components/Blog/BlogHome";
 import Blog from "./Components/Blog/Blog";
 import { Helmet } from "react-helmet";
 
@@ -43,7 +44,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/blog" element={<BlogHome />} />
+          <Route exact path="/blog/:title" element={<Blog />} />
         </Routes>
       </Router>
     </>

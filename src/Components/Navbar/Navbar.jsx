@@ -3,15 +3,22 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 function Navibar(props) {
-  const isSmallScreen = window.innerWidth <= 768;
-  return (
+  return props.navigation ? (
     <Navbar
       sticky="top"
       expand="lg"
       style={
         window.innerWidth <= 991
-          ? { height: "auto", backgroundColor: "rgb(29 41 81)" }
-          : { height: "80px", backgroundColor: "rgb(29 41 81)" }
+          ? {
+              textAlign: "center",
+              height: "auto",
+              backgroundColor: "rgb(29 41 81)",
+            }
+          : {
+              textAlign: "center",
+              height: "80px",
+              backgroundColor: "rgb(29 41 81)",
+            }
       }
     >
       <Container>
@@ -41,30 +48,16 @@ function Navibar(props) {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
-              onClick={props.serviceClick}
-              style={{ color: "white", letterSpacing: "2px" }}
-            >
-              Services
-            </Nav.Link>
-            <Nav.Link
-              onClick={props.areaClick}
-              style={{ color: "white", letterSpacing: "2px" }}
-            >
-              Service Areas
-            </Nav.Link>
-            <Nav.Link
-              onClick={props.contactClick}
-              style={{ color: "white", letterSpacing: "2px" }}
-            >
-              Contact Us
-            </Nav.Link>
-            <Nav.Link
-              onClick={props.aboutUs}
-              style={{ color: "white", letterSpacing: "2px" }}
-            >
-              About Us
-            </Nav.Link>
+            {props.links.map((link, index) => (
+              <Nav.Link
+                key={index}
+                onClick={link.onClick}
+                style={{ color: "white", letterSpacing: "2px" }}
+                href={link.route}
+              >
+                {link.label}
+              </Nav.Link>
+            ))}
           </Nav>
           <Nav className="ml-auto">
             <Nav.Link
@@ -75,6 +68,60 @@ function Navibar(props) {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  ) : (
+    <Navbar
+      sticky="top"
+      expand="lg"
+      style={
+        window.innerWidth <= 991
+          ? {
+              textAlign: "center",
+              height: "auto",
+              backgroundColor: "rgb(29 41 81)",
+            }
+          : {
+              textAlign: "center",
+              height: "120px",
+              backgroundColor: "rgb(29 41 81)",
+            }
+      }
+    >
+      <Container
+        style={{
+          display: "flex",
+
+          alignItems: "center",
+        }}
+      >
+        <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+          <Navbar.Brand
+            style={{ color: "white", display: "flex", alignItems: "center" }}
+          >
+            <Nav.Link href="/">
+            <img
+              style={
+                window.innerWidth <= 991
+                  ? { height: "50px", marginRight: "20px" }
+                  : { height: "400px" }
+              }
+              src={
+                window.innerWidth <= 991
+                  ? "/images/cds.webp"
+                  : "/images/untitled17-202404122345591-6632efdb353d8.webp"
+              }
+              alt="Central Door Services"
+            />
+            </Nav.Link>
+
+            {window.innerWidth <= 991
+              ? window.innerWidth <= 381
+                ? ""
+                : "Central Door Services"
+              : ""}
+          </Navbar.Brand>
+        </div>
       </Container>
     </Navbar>
   );

@@ -84,7 +84,7 @@ const buttonStyles = {
   boxShadow: "rgba(245, 244, 247, .25) 0 1px 1px inset",
   color: "#fff",
   cursor: "pointer",
-  fontSize: "1.5rem",
+  fontSize: "1.3em",
   fontWeight: "500",
   lineHeight: "1.5",
   textAlign: "center",

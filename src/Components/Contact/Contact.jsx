@@ -54,7 +54,16 @@ const Contact = (props) => {
       });
   };
   return (
-    <>
+    <div
+      style={{
+        backgroundColor: "rgb(29,41,81)",
+        height: "500px",
+        width: "100%",
+        margin: "auto",
+        justifyContent: "center",
+        display: "flex",
+      }}
+    >
       <Form
         ref={props.propRef}
         style={
@@ -151,7 +160,7 @@ const Contact = (props) => {
         </div>
       </Form>
       <ToastContainer />
-    </>
+    </div>
   );
 };
 

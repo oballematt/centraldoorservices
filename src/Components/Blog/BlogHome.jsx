@@ -49,7 +49,7 @@ const Blog = () => {
                   src={item.image1}
                   style={{ height: "450px", objectFit: "cover" }}
                 />
-                <Card.Body>
+                <Card.Body style={{backgroundColor: "rgba(29, 41, 81, 0.8)", color: "white"}}>
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{truncateText(item.section1, 100)}</Card.Text>
                   <Link to={`/blog/${slugify(item.title)}`}>

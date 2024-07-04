@@ -39,7 +39,7 @@ const Home = () => {
     { label: "Service Areas", onClick: scrollToArea },
     { label: "Contact Us", onClick: scrollToContact },
     { label: "About Us", onClick: scrollToAbout },
-    { label: "Blogs", onClick: scrollToAbout, route: "/blog" },
+    { label: "Blogs", route: "/blog" },
   ];
 
   return (
